@@ -1,10 +1,11 @@
 package pack.classOfBoysAndGirls;
 
-public class Clothes {
+public abstract class Clothes {
     private ClothesName ClothName;
     private ClothesColour ClothColour;
     private Integer ClothPocketsCount;
     private Integer ClothSize;
+
 
     public void setClothSize(Integer clothSize) {
         ClothSize = clothSize;
