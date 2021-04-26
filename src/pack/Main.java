@@ -15,6 +15,15 @@ public class Main {
         ClassOfPeople classOfPeople = new ClassOfPeople();
         classOfPeople.CreateClassOfPeopleByCountAndQuantity(40, 30, 70);
         System.out.println("boys:" + classOfPeople.getBoysCount() + " girls:" + classOfPeople.getGirlsCount());
+        System.out.println("==============================================");
+        Double averageAge = 0.0;
+        for(int i = 0; i < classOfPeople.getPeople().size() - 1; i++ )
+        {
+
+        }
+
+        System.out.println("average age " +averageAge/classOfPeople.getPeople().size());
+        System.out.println("==============================================");
 
         Comparator<Person> comClothName = Comparator.comparing(Clothes::getClothName);
 
