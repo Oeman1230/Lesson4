@@ -54,7 +54,7 @@ public abstract class Clothes {
     public void setRandomClothName()
     {
         int randNum;
-        randNum = (int)(Math.random() * 5 ) ;
+        randNum = (int)(Math.random() * 4 + 1 ) ;
         switch (randNum)
         {
             case 1:

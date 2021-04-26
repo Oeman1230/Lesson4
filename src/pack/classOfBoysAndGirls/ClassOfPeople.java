@@ -19,17 +19,21 @@ public class ClassOfPeople {
         Integer i;
         for(i=0; i < BoysCount; i++)
         {
-            Person kid = new Person(i);
+            Person kid = new Person(i+1);
             kid.makeBoy();
             people.add(kid);
         }
         for(i=0; i < GirlsCount; i++)
         {
-            Person kid = new Person(i);
+            Person kid = new Person(i+1);
             kid.makeGirl();
             people.add(kid);
         }
 
+    }
+
+    public List<Person> getPeople() {
+        return people;
     }
 
     public Integer getBoysCount() {
