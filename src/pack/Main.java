@@ -29,8 +29,13 @@ public class Main {
 
         Stream<Person> clothesUp = classOfPeople.getPeople().stream().sorted(comClothName);
 
-       List<Person> lis = clothesUp.collect(Collectors.toList());
-       lis.forEach(it ->  System.out.println(it.getPersonName() + " "+it.getPersonGender() + " " + it.getClothName()));
+       List<Person> listClothName = clothesUp.collect(Collectors.toList());
+        listClothName.forEach(it ->  System.out.println(it.getPersonName() + " "+it.getPersonGender() + " " + it.getClothName()));
+        System.out.println("==============================================");
+        Comparator<Person> comClothSize = Comparator.comparing(Clothes::getClothSize);
 
+        Stream<Person> clothesSize = classOfPeople.getPeople().stream().sorted(comClothSize.reversed());
+        List<Person> listClothSize = clothesSize.collect(Collectors.toList());
+        listClothSize.forEach(it -> System.out.println(it.getPersonName()+ " " + it.getPersonGender() + " " + it.getClothSize()));
     }
 }
