@@ -19,7 +19,7 @@ public class Main {
         Double averageAge = 0.0;
         for(int i = 0; i < classOfPeople.getPeople().size() - 1; i++ )
         {
-
+                averageAge += classOfPeople.getPeople().get(i).getPersonAge();
         }
 
         System.out.println("average age " +averageAge/classOfPeople.getPeople().size());

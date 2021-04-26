@@ -12,9 +12,13 @@ public class Person extends Clothes {
         setRandomClothColour();
         setRandomClothPockets();
         setRandomClothSize();
+        setRandomAge();
         setPersonName("Person" + personNumber);
     }
-
+    public void setRandomAge()
+    {
+        PersonAge = (int)(Math.random() * 2 + 10) ;
+    }
     public void makeGirl()
     {
         setPersonGender(PersonGender.GIRL);
