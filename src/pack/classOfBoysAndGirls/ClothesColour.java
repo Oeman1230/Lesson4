@@ -5,4 +5,5 @@ public enum ClothesColour {
     BROWN,
     BLACK,
     RED;
+
 }

@@ -43,4 +43,5 @@ public class ClassOfPeople {
     public Integer getGirlsCount() {
         return GirlsCount;
     }
+
 }

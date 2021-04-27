@@ -50,10 +50,12 @@ public class Main {
                 " " + it.getPersonGender() + " " + it.getClothPocketsCount()));
         System.out.println("==============================================");
         Stream<Person> colourSt = classOfPeople.getPeople().stream()
-                .filter(it -> it.getClothColour() == ClothesColour.BROWN | it.getClothColour() == ClothesColour.GREEN);
+                .filter(it -> it.getClothColour() == ClothesColour.BROWN | it.getClothColour() == ClothesColour.GREEN)
+                .sorted(Comparator.comparing(Clothes::getClothColour));
         List<Person> listColour = colourSt.collect(Collectors.toList());
         listColour.forEach(it -> System.out.println(it.getPersonName()
                 + " " + it.getPersonGender() + " " + it.getClothColour()
         ));
     }
 }
+

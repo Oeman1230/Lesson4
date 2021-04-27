@@ -36,6 +36,7 @@ public class Person extends Clothes {
         return personGender;
     }
 
+
     public void setRandomPersonGender()
     {
         int randNum;

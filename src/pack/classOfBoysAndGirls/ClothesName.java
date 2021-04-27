@@ -5,4 +5,5 @@ public enum ClothesName {
     SHIRT,
     COAT,
     WAISTCOAT;
+
 }
