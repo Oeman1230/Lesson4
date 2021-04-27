@@ -56,6 +56,16 @@ public class Main {
         listColour.forEach(it -> System.out.println(it.getPersonName()
                 + " " + it.getPersonGender() + " " + it.getClothColour()
         ));
+        System.out.println("==============================================");
+        classOfPeople.getPeople().forEach(it -> System.out.println(
+                it.getPersonName() + " " +
+                it.getPersonGender() + " " +
+                        it.getPersonAge() + " " +
+                        it.getClothName() + " " +
+                        it.getClothColour() + " " +
+                        it.getClothSize() + " " +
+                        it.getClothPocketsCount()
+        ));
     }
 }
 
